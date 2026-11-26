@@ -1,8 +1,6 @@
 # Barrelfish OS Capstone
 
-A Spring 2023 CSE 481A operating-systems capstone built on the [Barrelfish](https://barrelfish.org/) research operating system. Our four-person team extended the ARMv8 system through the course milestones, from memory management and process creation to multicore messaging and an interactive shell.
-
-> **Project team:** Andrew Makin · Daniel Rashevsky · David Strupinski · Peter Hale
+A operating-systems capstone built on the [Barrelfish](https://barrelfish.org/) research operating system. Our four-person team extended the ARMv8 system through the course milestones, from memory management and process creation to multicore messaging and an interactive shell.
 
 ## What we built
 
@@ -16,7 +14,7 @@ The project brings together several core operating-system mechanisms:
 
 The system was developed and exercised with QEMU and an i.MX8X/Toradex ARMv8 board. The final report describes the design decisions and limitations in detail; the original PDF is not included in this repository history.
 
-## Daniel Rashevsky’s contributions
+## Daniel’s contributions
 
 Daniel’s work focused on connecting the system’s process, capability, and multicore mechanisms:
 
@@ -27,17 +25,6 @@ Daniel’s work focused on connecting the system’s process, capability, and mu
 - Added shell help and ELF-module listing commands, and contributed to the shell’s command documentation.
 
 These changes were developed collaboratively and depended on the interfaces and debugging work of the whole team.
-
-## Team credits
-
-The project was a shared effort; these highlights reflect the milestone responsibilities recorded by the team, not exclusive ownership of each subsystem.
-
-| Team member | Project contributions |
-| --- | --- |
-| **Andrew Makin** | Led much of the memory-management and virtual-memory work; contributed substantially to process spawning and RPC/message-passing implementation, debugging, and integration. |
-| **Daniel Rashevsky** | Child-process and capability setup, ELF loading support, LMP/RPC integration, multicore memory and module transfer, and shell help/module-listing features. |
-| **David Strupinski** | Virtual-memory and paging work, process-management and IPC debugging, multicore messaging design and fixes, and early shell/terminal integration. |
-| **Peter Hale** | Memory allocator coalescing and partial-free work, process and RPC implementation, multicore boot and UMP messaging, UART support, and RAMFS-backed shell commands. |
 
 ## How the system fits together
 
